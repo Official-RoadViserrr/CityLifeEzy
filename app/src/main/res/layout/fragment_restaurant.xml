@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu1_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <!--<ImageView
+        android:id="@+id/gpslocationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/location" />-->
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_margin="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <AutoCompleteTextView
+            android:id="@+id/autoCompleteTextViewOK"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_weight="8"
+            android:background="@drawable/rounded_edittext"
+            android:completionThreshold="1"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="Type Here"
+            android:minHeight="50dp"
+            android:textColor="@color/background_material_dark"
+            android:textColorHint="@color/grey"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/searchAreaView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:src="@drawable/ic_action_next_item"
+            android:background="@drawable/rounded_edittext"
+            android:elevation="4dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center"
+            android:minHeight="50dp"
+            android:visibility="gone" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="45dp"
+        android:layout_below="@+id/linearLayout"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <Spinner
+            android:id="@+id/spinner"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginRight="2dp"
+            android:background="@drawable/spinner_layout_bg"
+            android:minHeight="50dp"
+            android:popupBackground="@drawable/spinner_layout_bg"
+            android:spinnerMode="dropdown"
+            android:visibility="gone" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:layout_marginLeft="2dp"
+            android:background="@drawable/spinner_layout_bg"
+            android:elevation="4dp"
+            android:popupBackground="@drawable/spinner_layout_bg"
+            android:spinnerMode="dropdown"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/res_menu"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/rounded_edittext"
+            android:elevation="4dp"
+            android:gravity="center"
+            android:text="Menu"
+            android:textColor="@color/color_primary"
+            android:textSize="14sp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</RelativeLayout>

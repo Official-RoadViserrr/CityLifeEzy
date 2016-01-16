@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="background_window">#E5E5E5</color>
+    <color name="background_tab_pressed">#6633B5E5</color>
+    <color name="color_primary">#00b8f0</color>
+    <color name="color_primarydark">#009ECC</color>
+    <color name="color_primary_transparent">#6F00000C</color>
+    <color name="transparent_white">#9FFFFFFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="darker_gray">#aaa</color>
+    <color name="black">#000</color>
+    <color name="grey">#7f7f7f</color>
+    <color name="light_grey">#F2F2F2</color>
+    <color name="drawer_text_color_">#36282D</color>
+    <color name="silver">#E0E2E1</color>
+
+    <color name="snackbar_back">#00b8f0</color>
+    <color name="snackbar_text">#FFFFFF</color>
+    <color name="dismiss_color">#FFFF0000</color>
+</resources>

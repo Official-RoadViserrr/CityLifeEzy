@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="5dp"
+    card_view:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/abc_primary_text_material_light"
+            android:text="Lollipop"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tvPhoneOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Phone One"
+            android:textColor="#3364e3"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tvPhoneTwo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Phone Two"
+            android:textColor="#6664e3"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu1_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc">
+
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+
+    <ImageView
+        android:id="@+id/gpslocationView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/location"
+        android:visibility="gone" />
+
+
+    <LinearLayout
+        android:id="@+id/llSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:orientation="horizontal">
+
+
+        <!--<AutoCompleteTextView-->
+            <!--android:id="@+id/autoCompleteTextViewOK"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentTop="true"-->
+            <!--android:layout_margin="5dp"-->
+            <!--android:layout_weight="0.9"-->
+            <!--android:background="@drawable/rounded_edittext"-->
+            <!--android:completionThreshold="1"-->
+            <!--android:elevation="4dp"-->
+            <!--android:ems="10"-->
+            <!--android:gravity="center"-->
+            <!--android:hint="Search Area"-->
+            <!--android:minHeight="45dp"-->
+            <!--android:textColor="@color/background_material_dark"-->
+            <!--android:textColorHint="@color/grey"-->
+            <!--android:textSize="16sp"-->
+            <!--android:visibility="gone" />-->
+
+        <Spinner
+            android:id="@+id/spinnerCNG"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/spinner_layout_bg"
+            android:elevation="4dp"
+            android:popupBackground="@drawable/spinner_layout_bg"
+            android:spinnerMode="dropdown" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/h_line"/>
+
+        <ImageView
+            android:id="@+id/searchAreaView"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_edittext"
+            android:layout_toRightOf="@+id/spinnerCNG"
+            android:src="@drawable/ic_action_next_item"
+            android:visibility="visible" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="3dp"
+        android:background="@color/transparent_white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+
+        <ImageView
+            android:id="@+id/rectimage_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:minHeight="20dp"
+            android:minWidth="10dp"
+            android:src="@drawable/cng_green"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/rectimage_2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:minHeight="20dp"
+            android:minWidth="10dp"
+            android:src="@drawable/cng_blue"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/rectimage_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:minHeight="20dp"
+            android:minWidth="10dp"
+            android:src="@drawable/cng_yellow"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/rectimage_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:minHeight="20dp"
+            android:minWidth="10dp"
+            android:src="@drawable/cng_pink"></ImageView>
+
+
+        <ImageView
+            android:id="@+id/rectimage_5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:minHeight="20dp"
+            android:minWidth="10dp"
+            android:src="@drawable/cng_orange"></ImageView>
+
+    </LinearLayout>
+
+    <!--<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:id="@+id/test_layout"
+        android:weightSum="11">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_station"
+        android:hint="Station"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="5"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/test_time"
+        android:hint="Time"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_weight="5"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/update_button"
+        android:layout_alignBottom="@+id/editText2"
+        android:layout_toRightOf="@+id/editText2"
+        android:layout_toEndOf="@+id/editText2"
+        android:layout_weight="1"/>
+    </LinearLayout>-->
+</RelativeLayout>

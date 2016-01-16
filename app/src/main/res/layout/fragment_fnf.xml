@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu1_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/fnftext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fnf Locator"
+            android:textStyle="bold"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_weight="9"/>
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:textOff="Disable"
+            android:textOn="Enable"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <com.citylifeezy.citylifeezy.SlidingTabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.citylifeezy.citylifeezy.SlidingTabLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:gravity="center"
+        android:id="@+id/defText"
+        android:layout_gravity="center_horizontal" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </android.support.v4.view.ViewPager>
+
+    <!--<com.google.android.gms.maps.MapView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/gpslocationView" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="135dp"
+        android:id="@+id/gpslocationView"
+        android:background="@drawable/location"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />-->
+
+
+    <!--<LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/backwhite"
+        android:layout_margin="3dp"
+        android:orientation="horizontal"
+        android:id="@+id/linearLayout4">
+
+
+    <AutoCompleteTextView
+        android:id="@+id/autoCompleteTextViewOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="0.9"
+        android:completionThreshold="1"
+        android:ems="10"
+        android:layout_alignParentTop="true"
+        fontPath="fonts/lydian.ttf"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        android:layout_weight="0.1"
+        android:layout_gravity="center"
+        android:id="@+id/searchAreaView"
+        android:background="@drawable/search_button"
+        android:layout_alignBottom="@+id/gpslocationView"
+        android:layout_toRightOf="@+id/autoCompleteTextView"
+        android:layout_toEndOf="@+id/autoCompleteTextView" />
+
+</LinearLayout>-->
+</LinearLayout>

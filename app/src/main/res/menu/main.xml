@@ -1,0 +1,32 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <item
+        android:id="@+id/search_icon"
+        fontPath="fonts/lydian.ttf"
+        android:icon="@drawable/search_button_white"
+        android:title="@string/search"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/report_action"
+        fontPath="fonts/lydian.ttf"
+        android:icon="@drawable/report"
+        android:title="@string/report_example"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/facebook"
+        fontPath="fonts/lydian.ttf"
+        android:title="Facebook" />
+
+    <item
+        android:id="@+id/rateUs"
+        fontPath="fonts/lydian.ttf"
+        android:title="Rate Us" />
+
+
+</menu>
+

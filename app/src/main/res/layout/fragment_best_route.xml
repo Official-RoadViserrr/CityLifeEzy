@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/menu1_lay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ccc"
+    tools:context="com.citylifeezy.citylifeezy.fragments.BestRouteFragment">
+
+    <com.google.android.gms.maps.MapView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/mapView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/gpslocationView"
+        android:layout_below="@+id/llSearchLayout"
+        android:background="@drawable/location1"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <RelativeLayout
+        android:id="@+id/llSearchLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:visibility="visible">
+		
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:isScrollContainer="false">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+        <EditText
+            android:id="@+id/autocomplete_places1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="9dp"
+            android:singleLine="true"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="@color/grey"
+            android:hint="Type the starting area"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="9dp"
+            android:textColor="@android:color/primary_text_light" />
+
+        <!--<ImageView-->
+            <!--android:id="@+id/cross1"-->
+            <!--android:layout_width="16dp"-->
+            <!--android:layout_height="16dp"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_marginTop="26dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:src="@drawable/cross"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView1"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/autocomplete_places1"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone"/>
+
+        <EditText
+            android:id="@+id/autocomplete_places2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/recyclerView1"
+            android:paddingLeft="8dp"
+            android:paddingRight="9dp"
+            android:singleLine="true"
+            android:background="@drawable/rounded_edittext"
+            android:textColorHint="@color/grey"
+            android:hint="Type the destination area"
+            android:drawableLeft="@drawable/search"
+            android:drawablePadding="9dp"
+            android:textColor="@android:color/primary_text_light" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/cross2"-->
+                    <!--android:layout_width="16dp"-->
+                    <!--android:layout_height="16dp"-->
+                    <!--android:layout_alignParentRight="true"-->
+                    <!--android:layout_marginTop="26dp"-->
+                    <!--android:layout_marginRight="20dp"-->
+                    <!--android:src="@drawable/cross"/>-->
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:scrollbars="vertical"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/autocomplete_places2"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:visibility="gone"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/h_line"/>
+
+        <Button
+            android:id="@+id/searchAreaView"
+            android:layout_below="@+id/recyclerView2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin = "15dp"
+            android:background="@color/color_primary"
+            android:text="Best Route"
+            android:textColor="@color/white"
+            android:visibility="visible"/>
+
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </RelativeLayout>
+
+
+
+    <!--<RelativeLayout-->
+        <!--android:id="@+id/RLmapview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/llSearchLayout"-->
+        <!-->-->
+
+
+
+
+
+        <!--</RelativeLayout>-->
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:gravity="center"
+        android:layout_above="@+id/lout"
+        android:background="@color/transparent_white">
+
+
+        <TextView
+            android:id="@+id/incoming"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="All colored flags show incoming traffic flow to respective traffic points!"
+            android:textSize="10sp"
+            android:textColor="@color/black"
+            android:ellipsize="marquee"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:scrollHorizontally="true"
+            android:scrollbars="horizontal"
+            android:singleLine="true"
+            android:gravity="center_vertical" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/transparent_white"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rectimage_1"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/green_rect" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/free_road"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rectimage_2"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/blue_rect" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/low_traffic"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rectimage_3"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/yellow_rect" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/moderate_traffic"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rectimage_4"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/pink_rect" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/heavy_traffic"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/rectimage_5"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/red_rect" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="@string/extreme_traffic"
+                android:textColor="@color/black"
+                android:textSize="10sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

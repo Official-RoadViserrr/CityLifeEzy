@@ -1,0 +1,399 @@
+<resources>
+    <string name="app_name">CityLifeEzy</string>
+
+    <string name="exit">Exit</string>
+
+    <string name="txt_nav_open">Open</string>
+    <string name="txt_nav_close">Close</string>
+    <string name="free_road">Free</string>
+    <string name="low_traffic">Low</string>
+    <string name="moderate_traffic">Moderate</string>
+    <string name="heavy_traffic">Heavy</string>
+    <string name="extreme_traffic">Extreme</string>
+    <string name="service_description">This is a core service for android. Stopping it may cause your device to fail.</string>
+
+    <string-array name="sections">
+        <item>Traffic Info</item>
+        <item>Your Frequent Places</item>
+        <item>Best Route Finder</item>
+        <item>CNG Station Queue Info</item>
+        <!--<item>Report Traffic</item>-->
+        <!--<item>Top Restaurants</item>-->
+        <!--<item>Bank/ATM Locator</item>-->
+        <!--<item>Dhaka Police Stations</item>-->
+        <item>Find Friends and Family</item>
+        <!--<item>Important Phones</item>-->
+        <!--<item>Download Music</item>-->
+        <!--<item>Your Profile</item>-->
+        <item>Your Feedback</item>
+        <!--<item>Subscription</item>-->
+        <item>User Guide</item>
+        <item>About CityLifeEzy</item>
+        <item>Exit</item>
+    </string-array>
+
+    <string-array name="section_titles">
+        <item>Traffic Info</item>
+        <item>Your Frequent Places</item>
+        <item>Best Route Finder</item>
+        <item>CNG Station Queue Info</item>
+        <!--<item>Report Traffic</item>-->
+        <!--<item>Top Restaurants</item>-->
+        <!--<item>Bank/ATM Locator</item>-->
+        <!--<item>Dhaka Police Stations</item>-->
+        <item>Find Friends and Family</item>
+        <!--<item>Important Phones</item>-->
+        <!--<item>Download Music</item>-->
+        <!--<item>Your Profile</item>-->
+        <item>Your Feedback</item>
+        <!--<item>Subscription</item>-->
+        <item>User Guide</item>
+        <item>About CityLifeEzy</item>
+        <item>Exit</item>
+    </string-array>
+
+    <string-array name="sections_icons">
+        <item>@drawable/home_button</item>
+        <!-- 0 Home -->
+        <item>@drawable/favorite_button</item>
+        <!-- 1 Your Places -->
+        <item>@drawable/route_button</item>
+        <item>@drawable/fnf</item>
+        <!-- 2 Best Route -->
+        <!--<item>@drawable/report_button</item>-->
+        <!-- 3 Report Traffic -->
+        <item>@drawable/restaurant_button</item>
+        <!-- 4 Restaurant Finder -->
+        <item>@drawable/atm_button</item>
+        <!--police thana icon-->
+        <item>@drawable/police_i4</item>
+        <!--CNG Station-->
+        <item>@drawable/cng_marker</item>
+        <!-- 5 Bank/ATM Locator -->
+        <item>@drawable/phn_menu</item>
+        <!-- 6 Emergency Phones -->
+        <!--<item>@drawable/music</item>-->
+        <item>@drawable/account_button</item>
+        <!-- 7 Your Profile -->
+        <item>@drawable/feedback_button</item>
+        <!-- 8 Feedback -->
+        <item>@drawable/all_point_button</item>
+        <!-- 9 Subscription -->
+        <item>@drawable/how_to_button</item>
+        <!-- 10 User Guide -->
+        <item>@drawable/about_button</item>
+        <!-- 11 About -->
+        <item>@drawable/exit_button</item>
+        <!-- 12 Exit -->
+    </string-array>
+
+    <string name="search_hint">Search...</string>
+
+    <string-array name="list_of_areas">
+        <item>Abdullahpur Bus Stand</item>
+        <item>House Building</item>
+        <item>Azampur Intersection</item>
+        <item>Rajlaxmi Complex</item>
+        <item>Jasimuddin Intersection</item>
+        <item>Airport Intersection</item>
+        <item>Bashundhara R/A Entrance</item>
+        <item>Badda Notun Bazar Intersection</item>
+        <item>Badda Link Road Intersection</item>
+        <item>Rampura Bridge</item>
+        <item>Khilgaon Abul Hotel</item>
+        <item>Malibagh Rail Gate</item>
+        <item>Mouchak Intersection</item>
+        <item>Moghbazar Intersection</item>
+        <item>Bangla Motor Intersection</item>
+        <item>Ruposi Bangla Hotel</item>
+        <item>Malibagh-Shantinagar Intersection</item>
+        <item>Shapla Chattar</item>
+        <item>Fakirapool Intersection</item>
+        <item>Dainik Bangla</item>
+        <item>Purana Paltan Intersection</item>
+        <item>Nilkhet Intersection</item>
+        <item>Highcourt Main Gate</item>
+        <item>Press Club Gate</item>
+        <item>Shahbagh Intersection</item>
+        <item>Elephant Road Bata Signal</item>
+        <item>Science Lab Intersection</item>
+        <item>Jigatola Bus Stand</item>
+        <item>Shankar Bus Stand</item>
+        <item>Lalmatia End</item>
+        <item>Asad Gate</item>
+        <item>Khamarbari Intersection</item>
+        <item>Farmgate Center</item>
+        <item>Shatrasta Intersection</item>
+        <item>Nabisco</item>
+        <item>Gulshan 1 Intersection</item>
+        <item>Gulshan 2 Intersection</item>
+        <item>Kamal Ataturk Avenue (Mr. Baker)</item>
+        <item>Kakoli Intersection</item>
+        <item>Amtoli Intersection</item>
+        <item>Mohakhali Intersection</item>
+        <item>Bijoy Sarani</item>
+        <item>Mirpur 10 Intersection</item>
+        <item>Mirpur 1 Intersection</item>
+        <item>Gabtoli Technical Intersection</item>
+        <item>Shyamoli Hall</item>
+        <item>FDC Intersection</item>
+        <item>Mohakhali Rupayan Center</item>
+        <item>Bijaynagar Intersection</item>
+        <item>Khilgaon Railgate Intersection</item>
+        <item>Russell Square Intersection</item>
+        <item>Dhanmondi 27 Persona</item>
+        <item>Karwanbazaar Intersection</item>
+        <item>Panthapath-Green Road Intersection</item>
+
+        <item>Kalabagan Intersection</item>
+        <item>Jahangir Gate</item>
+        <item>Badda Post Office Point</item>
+        <item>Khilkhet CNG Station Point</item>
+        <item>Kakrail Comet CNG Point</item>
+        <item>Madani Rd Bridge Point</item>
+        <item>Gulshan 2 HSBC Point</item>
+        <item>Rasulbagh Point</item>
+        <item>Trust Filling Station Point</item>
+        <item>Gulshan SCB Head Office</item>
+        <item>Hazipara CNG Station Point</item>
+        <item>Jamuna CNG Station Point</item>
+        <item>Merul Filling Station Point</item>
+        <item>Brac University</item>
+        <item>Labaid Dhanmondi</item>
+        <item>Kallyanpur Point</item>
+        <item>Navana CNG Point</item>
+        <item>Mirpur Shahjalal CNG Station Point</item>
+        <item>Mirpur Aria CNG Station Point</item>
+        <item>Nilkhet Kataban Intersection</item>
+
+        <item>Dhanmondi 7 Intersection</item>
+        <item>Kataban Intersection</item>
+        <item>Kakrail Masjid - Officers Club Intersection</item>
+        <item>Mirpur Thana Intersection</item>
+        <item>Agargaon Bus Stand Intersection</item>
+        <item>Chankharpul Intersection</item>
+        <item>Kuril Bus Stand</item>
+        <item>Gulshan 2 Labaid Point</item>
+        <item>Banani Artisan Point</item>
+        <item>Westin Point</item>
+        <item>Gulshan Agora</item>
+        <item>Link Road Bridge Point</item>
+        <item>Vasavi Point</item>
+        <item>Brac Center</item>
+        <item>Titumir College</item>
+        <item>Sainik Club Point</item>
+        <item>Square Hospital</item>
+        <item>Green Road Middle Section</item>
+        <item>Chandrima Uddan Intersection</item>
+        <item>Gulshan 2 Sweden Embassy</item>
+        <item>Rabindra Sarobar Front</item>
+        <item>Dhanmondi 8 Bridge</item>
+        <item>Gulshan Rd 34 Point</item>
+        <item>Gulshan Rd to 34 Banani Bridge Point</item>
+        <item>Gulshan 35/37 Intersection</item>
+    </string-array>
+
+    <string-array name="list_of_police_thana">
+
+        <item>Adabor</item>
+        <item>Airport</item>
+        <item>Badda</item>
+        <item>Banani</item>
+        <item>Bangshal</item>
+        <item>Cantonment</item>
+        <item>Chalkbazar</item>
+        <item>Dakshin Khan</item>
+        <item>Darus Salam</item>
+        <item>Demra</item>
+        <item>Dhanmondi</item>
+        <item>Gandaria</item>
+        <item>Gulshan</item>
+        <item>Hajaribag</item>
+        <item>Jatrabari</item>
+        <item>Kafrul</item>
+        <item>Kalabagan</item>
+        <item>Khilgaon</item>
+        <item>Khilkhet</item>
+        <item>Kadamtali</item>
+        <item>Kotwali</item>
+        <item>Lalbag</item>
+        <item>Mirpur</item>
+        <item>Mohammodpur</item>
+        <item>New Market</item>
+        <item>Motijheel</item>
+        <item>Mugda</item>
+        <item>Pallabi</item>
+        <item>Paltan</item>
+    </string-array>
+
+    <string-array name="list_of_cng_station">
+
+        <item>Sikder Filling Station</item>
+        <item>Aria CNG Station</item>
+        <item>Shahjalal CNG Station</item>
+        <item>Anudip CNG Station</item>
+        <item>Denso CNG Station</item>
+        <item>Navana CNG Station</item>
+        <item>Khilkhet CNG Station</item>
+        <item>Hazipara CNG Station</item>
+        <item>RSR CNG Station</item>
+        <item>Khandoker CNG Station</item>
+        <item>Binimoy CNG Station</item>
+        <item>Comet CNG Station</item>
+        <item>Comfort CNG Station</item>
+        <item>Jamuna CNG Station</item>
+        <item>ABN CNG Station</item>
+        <item>Modern CNG Station</item>
+        <item>Trust CNG Station</item>
+        <item>Purbachall CNG Station</item>
+        <item>ABN CNG Station Rasulbagh</item>
+        <item>Royel CNG Station</item>
+        <item>Zaman CNG Station</item>
+
+        <item>Sonar Bangla CNG Filling Station</item>
+        <item>Minerva CNG Filling Station</item>
+        <item>Akij CNG Filling Station</item>
+        <item>Best Eastern CNG Filling Station</item>
+        <item>24 Feet CNG Station</item>
+
+        <item>Nilkhet CNG Station</item>
+    </string-array>
+
+
+    <string-array name="list_of_restaurant">
+        <item>Kabab Factory</item>
+        <item>Barbecue Flames</item>
+        <item>Aadi Dhaka</item>
+        <item>Kasturi Garden</item>
+        <item>The Dinning Room</item>
+        <item>Cilantro</item>
+        <item>Bread and Beyond</item>
+        <item>Burger n\' Boost</item>
+        <item>Cafe Droom</item>
+        <item>Cafe Hollywood</item>
+        <item>Cafe Italiano</item>
+        <item>Coffee Rpublic Bangladesh</item>
+        <item>Crossroads Lounge</item>
+        <item>Fiesta Restaurant</item>
+        <item>George\'s Cafe</item>
+        <item>Gloria Jean\'s</item>
+        <item>Moka Cafe and Bistro</item>
+        <item>Fiesta Oven Fresh bake and brew</item>
+        <item>Tastebud</item>
+        <item>The Oriental Lounge</item>
+        <item>The Stage</item>
+        <item>White Hen Gourmet and Pastry Shop</item>
+        <item>FFC Gulshan</item>
+        <item>FFC Mirpur</item>
+        <item>KFC Restaurant Dhanmondi</item>
+        <item>KFC Restaurant Baily Road</item>
+        <item>KFC Restaurant Mirpur</item>
+        <item>KFC Restaurant Gulshan</item>
+        <item>KFC Restaurant Paltan</item>
+        <item>KFC Restaurant Panthapath</item>
+        <item>KFC Restaurant Banani</item>
+        <item>Nando\'s Gulshan</item>
+        <item>Nando\'s Dhanmondi</item>
+        <item>Mainland China</item>
+        <item>Black Tent</item>
+        <item>Bukhara Restaurant</item>
+        <item>Dhaba</item>
+        <item>Great Indian Restaurant</item>
+        <item>Handi Indian Bistro</item>
+        <item>Khana Khazana</item>
+        <item>Locknow Restaurant</item>
+        <item>The Mughal Kitchen</item>
+        <item>Nawaab\'s</item>
+        <item>Santoor</item>
+        <item>Tarka</item>
+        <item>Angaar</item>
+        <item>Hakka Dhaka</item>
+        <item>Sajna</item>
+        <item>Koyla</item>
+        <item>Casa Greek</item>
+        <item>Emma N Uelles Inn</item>
+        <item>Hungry Duck</item>
+        <item>Live Kitchen</item>
+        <item>Rice n Noodies</item>
+        <item>The Chef</item>
+        <item>Voot the Restaurant</item>
+        <item>Loiter D85</item>
+        <item>Spaghetti Jazz</item>
+        <item>Veni Vidi Vici</item>
+        <item>Terra Bistro</item>
+        <item>Japanese Restaurant Ichi</item>
+        <item>(Teriyaki) Kobe Japanese Restaurant</item>
+        <item>Goong:The Castle</item>
+        <item>Korean Restaurant</item>
+        <item>Dae Jang Geum- Korean Cuisine</item>
+        <item>Suraon</item>
+        <item>DuMiOk</item>
+        <item>Quesadilla La Mexicana Grill</item>
+        <item>Sbarro Bangladesh</item>
+        <item>Pizza Hut Baily Road</item>
+        <item>Pizza Hut Dhanmondi</item>
+        <item>Pizza Hut Gulshan</item>
+        <item>Pizza Hut Uttara</item>
+        <item>Pizza Hut Banani</item>
+        <item>Absolute Thai</item>
+        <item>Corner (Fusion) Thai Restaurant</item>
+        <item>Red Tomato</item>
+        <item>Soi 71</item>
+    </string-array>
+
+    <string-array name="list_of_bank">
+        <item>Brac Bank \n Gulshan Branch</item>
+
+    </string-array>
+
+    <string-array name="tabs">
+        <item>Map View</item>
+        <item>Available Contact</item>
+        <item>Pending Requests</item>
+        <item>Settings</item>
+    </string-array>
+
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="report_example">Report</string>
+
+
+    <string name="findContact">find person&#8230;</string>
+
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_search">Search</string>
+    <string name="action_flag">Flag</string>
+
+    <string name="favorites">Favorites</string>
+    <string name="products">Products</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_favourite_list">FavouriteListActivity</string>
+
+    <string name="search">Search</string>
+    <string name="fromText">Area Name</string>
+    <string name="toText">To</string>
+    <string name="traffCondition">Traffic Condition</string>
+    <string name="repRemarks">Remarks (optional)</string>
+    <string name="title_activity_splash">SplashActivity</string>
+    <string name="title_activity_drawer">DrawerActivity</string>
+
+    <string name="txt_traffic_update">Traffic Update</string>
+    <string name="txt_your_places">Your Places</string>
+    <string name="txt_best_route">Best Route</string>
+    <string name="txt_fnf">Find and Locate</string>
+    <string name="txt_top_restaurent">Top Restaurant</string>
+    <string name="txt_bank_atm">Bank/ATM Locator</string>
+    <string name="txt_police_st">Dhaka Police Stations</string>
+    <string name="txt_cng_st">CNG Stations</string>
+    <string name="txt_imp_phones">Important Phones</string>
+    <string name="txt_your_profile">Your Profile</string>
+    <string name="txt_feedback">Feedback</string>
+    <string name="txt_subscription">Subscription</string>
+    <string name="txt_user_guide">User Guide</string>
+    <string name="txt_about">About Us</string>
+</resources>

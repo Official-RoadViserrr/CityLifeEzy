@@ -1,0 +1,109 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="10dp"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center"
+        android:text="REPORT TRAFFIC"
+        android:textColor="@color/color_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="64dp"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFBB33"
+        android:contentDescription="@string/app_name"
+        android:scaleType="center"
+        android:src="@mipmap/ic_launcher"/>
+
+
+    <Spinner
+        android:id="@+id/reportFromAreaName"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_layout_bg"
+        android:padding="5dp"
+        android:popupBackground="@drawable/spinner_layout_bg"
+        android:spinnerMode="dropdown"/>
+
+
+    <!--<TextView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:elevation="4dp"
+        android:gravity="left"
+        android:text="Traffic Condition"
+        android:textColor="@color/background_material_dark"
+        android:textSize="18sp"
+        android:textStyle="bold" />-->
+
+    <Spinner
+        android:id="@+id/trafficCondition"
+        android:layout_width="fill_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/spinner_layout_bg"
+        android:padding="5dp"
+        android:popupBackground="@drawable/spinner_layout_bg"
+        android:spinnerMode="dropdown" />
+
+
+    <EditText
+        android:id="@+id/reportRemarks"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_edittext"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:hint="@string/repRemarks"
+        android:inputType="textMultiLine|textNoSuggestions"
+        android:lines="3"
+        android:paddingLeft="10dp"
+        android:textColor="@color/color_primary"
+        android:textColorHint="@color/grey" />
+
+
+    <LinearLayout
+        android:id="@+id/page_buttons"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/reportTrafficButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/color_primary"
+            android:elevation="4dp"
+            android:text="Report"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/cancelReportButton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="0.5"
+            android:background="@color/color_primary"
+            android:elevation="4dp"
+            android:text="Cancel"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</LinearLayout>
